@@ -3,7 +3,7 @@ author: Cyprien de Fontenay
 categories: ["noblesse"]
 date: 08/10/2023
 featured: false
-image: ./images/lesson1.png
+image: ./images/vikingwoman.jpg
 title: Novgorod and the Hanse.
 ---
 

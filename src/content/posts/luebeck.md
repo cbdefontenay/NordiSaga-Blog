@@ -3,7 +3,7 @@ author: Cyprien de Fontenay
 categories: ["noblesse"]
 date: 08/10/2023
 featured: false
-image: ./images/castle.png
+image: ./images/plague.jpg
 title: Lübeck in the 13 century.
 ---
 
