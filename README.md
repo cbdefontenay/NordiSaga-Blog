@@ -2,13 +2,13 @@
 
 Bienvenue sur notre blog d'histoire dédié à l'étude passionnante de la Scandinavie et de la Ligue hanséatique pendant le Moyen Âge et la Renaissance. Plongeons ensemble dans les récits captivants de cette période fascinante de l'histoire nordique.
 
-![Vikings]("public/vikingwoman.jpg")
+![Vikings]("/vikingwoman.jpg")
 
 ## Objectif du Projet
 
 Notre objectif est de fournir une exploration approfondie et engageante des événements, des personnalités et des développements culturels qui ont façonné la Scandinavie et la Ligue hanséatique. Nous aborderons une variété de sujets allant des sagas épiques aux stratégies commerciales complexes, en passant par les avancées artistiques et intellectuelles de l'époque.
 
-![Ville Hanséatique]("../../public/hansatown.jpg")
+![Ville Hanséatique]("/hansatown.jpg")
 
 ## Thèmes Abordés
 
@@ -18,7 +18,7 @@ Les sujets que nous aborderons incluent, mais ne se limitent pas à :
 
 - **La Ligue hanséatique :** Plongez dans l'histoire de cette puissante alliance commerciale qui a influencé les échanges économiques en Europe du Nord.
 
-![Renaissance Nordique]("../../public/margrethe.jpg")
+![Renaissance Nordique]("/margrethe.jpg")
 
 - **La Renaissance Nordique :** Découvrez les mouvements artistiques, scientifiques et culturels qui ont caractérisé la Renaissance dans le nord de l'Europe.
 
