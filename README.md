@@ -1,4 +1,4 @@
-# Projet de Blog d'Histoire : NordiSaga
+# Blog d'Histoire : NordiSaga
 
 Bienvenue sur mon blog d'histoire dédié à l'étude passionnante de la Scandinavie et de la Ligue hanséatique pendant le Moyen Âge et la Renaissance. Plongeons ensemble dans les récits captivants de cette période fascinante de l'histoire nordique.
 
