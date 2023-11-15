@@ -86,11 +86,6 @@ export default function Nav() {
           height="50"
           className="rounded-full"
         />
-        <motion.div className="hidden items-center gap-12 xl:flex">
-          <img src="../../public/dribble.png" alt="Dribble Account" />
-          <img src="../../public/twitter.png" alt="Twitter Account" />
-          <img src="../../public/youtube.png" alt="Youtube Channel" />
-        </motion.div>
       </motion.div>
 
       {/* Title */}
