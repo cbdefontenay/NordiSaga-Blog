@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import woman from "../../public/vikingwoman.jpg";
+import hansaTown from "../../public/hansatown.jpg";
+import plague from "../../public/plague.jpg";
+import kogge from "../../public/kogge.jpg";
+---
+
+<div class="mx-12">
+  <h1 class="my-24 text-center text-xl font-skranjiBold">
+    L'histoire du Nord en image
+  </h1>
+  <div class="grid grid-cols-1 gap-24 xl:mx-48 xl:grid-cols-2">
+    <div class="group relative cursor-pointer">
+      <Image
+        class="relative z-10 w-full rounded-lg transition-all group-hover:-translate-x-3"
+        src={woman}
+        alt="painting"
+      />
+      <div
+        class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"
+      >
+      </div>
+    </div>
+    <div class="group relative cursor-pointer">
+      <Image
+        class="relative z-10 w-full rounded-lg transition-all group-hover:-translate-x-3"
+        src={hansaTown}
+        alt="painting"
+      />
+      <div
+        class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"
+      >
+      </div>
+    </div>
+    <div class="group relative cursor-pointer">
+      <Image
+        class="relative z-10 w-full rounded-lg transition-all group-hover:-translate-x-3"
+        src={plague}
+        alt="painting"
+      />
+      <div
+        class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"
+      >
+      </div>
+    </div>
+    <div class="group relative cursor-pointer">
+      <Image
+        class="relative z-10 w-full rounded-lg transition-all group-hover:-translate-x-3"
+        src={kogge}
+        alt="painting"
+      />
+      <div
+        class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4"
+      >
+      </div>
+    </div>
+  </div>
+</div>

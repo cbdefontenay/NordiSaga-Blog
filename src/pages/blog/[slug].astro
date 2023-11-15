@@ -1,0 +1,28 @@
+---
+import { getEntryBySlug } from "astro:content";
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug("posts", slug as string);
+
+if (!post) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title}>
+  <Image
+    src={post.data.image}
+    alt={post.data.title}
+    width={400}
+    height={400 / 1.5}
+    format="webp"
+    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+  />
+  <div class="prose prose-2xl overflow-visible relative mb-20">
+    <Content />
+  </div>
+</Layout>

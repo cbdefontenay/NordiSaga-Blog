@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import PostList from "../components/PostList.astro";
+
+const posts = await getCollection("posts");
+---
+
+<Layout title="Blog | Histoire">
+  <div class="mt-44">
+    {posts.map((post) => <PostList posts={posts} />)}
+  </div>
+</Layout>
