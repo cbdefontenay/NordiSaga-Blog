@@ -14,15 +14,13 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title}>
-  <Image
-    src={post.data.image}
-    alt={post.data.title}
-    width={400}
-    height={400 / 1.5}
-    format="webp"
-    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
-  />
-  <div class="prose prose-2xl overflow-visible relative mb-20">
+  <div class="text-gray-200 text-base md:text-2xl mb-16 ml-8">
+    ← <a href="/blog" class="underline">Retour aux articles</a>
+  </div>
+
+  <div
+    class="prose prose-lg lg:prose-2xl overflow-visible relative w-screen text-gray-50 overflow-x-hidden px-5 md:px-0 flex flex-col justify-center mb-20 lg:ml-72 text-justify"
+  >
     <Content />
   </div>
 </Layout>

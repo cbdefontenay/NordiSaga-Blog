@@ -7,7 +7,7 @@ const posts = await getCollection("posts");
 ---
 
 <Layout title="Blog | Histoire">
-  <div class="mt-44">
-    {posts.map((post) => <PostList posts={posts} />)}
+  <div class="mt-44 grid md:grid-cols-3 grid-cols-1">
+    {posts.map((post) => <PostList posts={[post]} />)}
   </div>
 </Layout>

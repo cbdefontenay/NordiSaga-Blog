@@ -9,26 +9,26 @@ type Props = {
 const { post } = Astro.props;
 ---
 
-<article>
+<article class="h-full mx-10">
   <a href={`/blog/${post.slug}`}>
     <Image
       src={post.data.image}
       alt={post.data.title}
-      width={400}
-      height={400 / 1.5}
+      width={300}
+      height={300}
       format="webp"
-      class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+      class="rounded-2xl shadow-xl mb-2 aspect-thumbnail object-cover"
     />
   </a>
 
   <a
     href={`/blog/${post.slug}`}
-    class="text-4xl text-zinc-900 mb-4 font-semibold inline-block"
+    class="text-lg md:text-2xl text-zinc-900 mb-10 font-semibold inline-block"
   >
-    {post.data.title}
+    {post.data.title} >
   </a>
-
+  <!-- 
   <span class="text-zinc-700 text-xl">
     {post.data.date}
-  </span>
+  </span> -->
 </article>

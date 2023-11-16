@@ -14,6 +14,7 @@ export default {
         lightBg: "#354c5b",
         darkHeader: "#bec7ce",
         lightHeader: "#15a58d",
+        error: "#d82111",
       },
       fontFamily: {
         skranjiBold: ["SkranjiBold", "Skranji-Bold"],
