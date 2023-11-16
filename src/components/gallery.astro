@@ -78,8 +78,17 @@ import kogge from "../../public/kogge.jpg";
 
   alertWomanElements.forEach((element) => {
     element.addEventListener("click", () => {
+      const title = "Fait surprenant";
       const message = element.getAttribute("data-message");
+
+      // Set the document title
+      document.title = title;
+
+      // Show the alert with the updated title
       alert(message);
+
+      // Reset the document title (optional)
+      document.title = "Original Title"; // Set it back to the original title if needed
     });
   });
 </script>
