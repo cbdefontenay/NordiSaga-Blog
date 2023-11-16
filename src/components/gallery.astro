@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import swal from "sweetalert";
 import woman from "../../public/vikingwoman.jpg";
 import hansaTown from "../../public/hansatown.jpg";
 import plague from "../../public/plague.jpg";
@@ -73,22 +74,13 @@ import kogge from "../../public/kogge.jpg";
   </div>
 </div>
 
-<script>
+<script lang="ts">
   const alertWomanElements = document.querySelectorAll(".group");
 
   alertWomanElements.forEach((element) => {
+    const message = element.getAttribute("data-message");
     element.addEventListener("click", () => {
-      const title = "Fait surprenant";
-      const message = element.getAttribute("data-message");
-
-      // Set the document title
-      document.title = title;
-
-      // Show the alert with the updated title
-      alert(message);
-
-      // Reset the document title (optional)
-      document.title = "Original Title"; // Set it back to the original title if needed
+      swal(message);
     });
   });
 </script>
