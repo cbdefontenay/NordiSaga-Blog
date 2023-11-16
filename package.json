@@ -1,5 +1,6 @@
 {
   "name": "nordisaga-blog",
+  "private": true,
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -19,7 +20,6 @@
     "astro": "^3.5.4",
     "framer-motion": "^10.16.5",
     "mdx": "^0.3.1",
-    "preact": "^10.19.2",
     "react": "^18.2.0",
     "react-dom": "^18.0.0",
     "tailwindcss": "^3.0.24",

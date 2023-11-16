@@ -53,7 +53,7 @@ export default function Nav() {
   const [toggled, setToggled] = useState(false);
 
   return (
-    <nav className="relative mx-8 mb-24 flex items-center justify-between pb-6 pt-12 font-medium md:mx-16 lg:mx-32">
+    <nav className="relative mx-8 mb-14 flex items-center justify-between pb-6 pt-12 font-medium md:mx-16 lg:mx-32">
       <motion.div
         animate={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -25 }}

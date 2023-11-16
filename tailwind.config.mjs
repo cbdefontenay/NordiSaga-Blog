@@ -9,14 +9,17 @@ export default {
       },
       colors: {
         content: "#282828",
-        primary: "#E05346",
+        primary: "#ce530c",
         darkBg: "#081a26",
         lightBg: "#354c5b",
         darkHeader: "#bec7ce",
+        lightHeader: "#15a58d",
       },
       fontFamily: {
         skranjiBold: ["SkranjiBold", "Skranji-Bold"],
         skranjiRegular: ["skranjiRegular", "Skranji-Regular"],
+        robotoRegular: ["robotoRegular", "RobotoSerif-Regular"],
+        robotoMedium: ["robotoMedium", "RobotoSerif-Medium"],
       },
     },
   },

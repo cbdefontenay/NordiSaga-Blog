@@ -7,9 +7,9 @@ import portrait from "../../public/margrethe.jpg";
   class="relative mx-12 flex flex-col items-center justify-center gap-12 xl:flex-row xl:gap-36"
 >
   <div class="w-full xl:w-1/2">
-    <h1 class="text-xl">
+    <h1 class="text-lg md:text-xl font-skranjiBold items-center">
       NordiSaga ! <span id="scribble" class="font-bold font-skranjiRegular"
-        >Entrez dans l'univers du Nord de l'Europe</span
+        >Entrez dans l'univers du Nord de l'Europe.</span
       >
     </h1>
 
@@ -17,9 +17,9 @@ import portrait from "../../public/margrethe.jpg";
       <svg class="absolute h-full w-full overflow-visible">
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: "#DC3A2B", stopOpacity: 1 }}
+            <stop offset="0%" style={{ stopColor: "#155bbf", stopOpacity: 1 }}
             ></stop>
-            <stop offset="100%" style={{ stopColor: "#E18510", stopOpacity: 1 }}
+            <stop offset="100%" style={{ stopColor: "#ba360e", stopOpacity: 1 }}
             ></stop>
           </linearGradient>
         </defs>
@@ -29,18 +29,29 @@ import portrait from "../../public/margrethe.jpg";
           stroke="url(#gradient)"
           stroke-width="4"></path>
       </svg>
-      <p id="anim-p" class="p-6 text-main">
-        You've stumbled upon <span class="font-bold text-primary">Hua's</span>
-         little corner of the internet, where creativity runs rampant and normal
-        is just a setting on a washing machine.<br />
+
+      <p
+        id="anim-p"
+        class="text-sm md:text-lg p-6 text-main text-justify font-robotoRegular"
+      >
+        Bienvenue sur <span class="font-bold text-primary font-skranjiRegular"
+          >Nordisaga.</span
+        >
+         Comme son nom l'indique, il s'agit ici de vous raconter l'histoire du
+        Nord de l'Europe, et plus particulièrement de la Scandinavie et du Nord
+        de l'Allemagne.<br />
         <br />
-         Stick around, explore the digital masterpieces, and enjoy the
-        occasional artistic shenanigans. It's more fun than you'd think!
+         Des Vikings à la Ligue hanséatique (die deutsche Hanse), à travers les
+        articles de NordiSaga, vous trouverez de quoi rassasier votre appétit
+        d'historien en herbe.
         <br />
         <br />
-         Delight in the unpredictable artistic shenanigans that burst forth from
-        the canvas of this digital universe. Here, every visit is an adventure,
-        every glance an exploration. Dive in, the pixels are warm!
+         Tout comme le 20 juillet 1397 marqua l'histoire du Danemark en
+        rassemblant les couronnes des royaumes scandinaves sous la régence de <span
+          class="font-bold text-primary font-skranjiRegular">Marguerite I</span
+        > du Danemark, NordiSaga essaie de compresser le plus possible
+        l'histoire et de vous la rendre le plus compréhensible possible avec des
+        sources à l'appui.
       </p>
     </div>
     <div
@@ -63,7 +74,7 @@ import portrait from "../../public/margrethe.jpg";
 
   <div class="relative">
     <Image
-      class="rounded-lg"
+      class="rounded-xl"
       width="400"
       height="500"
       src={portrait}
@@ -71,16 +82,40 @@ import portrait from "../../public/margrethe.jpg";
     />
   </div>
 </div>
-<div class="mt-12 h-6 w-full bg-black"></div>
+
+<!-- transition -->
+<div class="relative mt-12 h-20 w-full bg-black pb-5">
+  <svg class="absolute h-full w-full overflow-visible">
+    <defs>
+      <linearGradient id="runes" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style={{ stopColor: "#04747c", stopOpacity: 1 }}
+        ></stop>
+        <stop offset="100%" style={{ stopColor: "#1548a5", stopOpacity: 1 }}
+        ></stop>
+      </linearGradient>
+    </defs>
+    <text
+      x="50%"
+      y="50%"
+      font-size="50"
+      fill="url(#runes)"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      class="text-base md:text-xl"
+    >
+      ᚴᚢᚱᚦ ᚴᚢᚴ ᚴᚢᚾᚢᚱ ᚢᛅ ᚢᛏᛅ ᚠᚱᛅᚾ ᚦᛅ ᚢᛒ ᚴᚱᚢᚦ ᛅᚢᚴ ᚱᛅᚾ ᚴᚢᚾ
+    </text>
+  </svg>
+</div>
 
 <style>
   #border-path {
-    animation: draw 1s forwards 1s ease-out;
+    animation: draw 2s forwards 1s ease-out;
   }
 
   @keyframes draw {
     to {
-      stroke-dashoffset: 0;
+      stroke-dashoffset: 50;
     }
   }
 </style>
