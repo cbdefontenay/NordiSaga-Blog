@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <div>
+    <div className="mx-10">
       <h1 className="text-center text-xl">Contactez-moi</h1>
       <form
         className="max-w-md mx-auto font-roboto"
