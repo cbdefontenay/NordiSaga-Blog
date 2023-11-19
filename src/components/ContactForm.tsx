@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <div className="mx-10">
+    <div className="px-10 font-robotoMedium">
       <h1 className="text-center text-xl">Contactez-moi</h1>
       <form
         className="max-w-md mx-auto font-roboto"
@@ -22,10 +22,7 @@ export default function ContactForm() {
         />
 
         <div className="mb-4">
-          <label
-            htmlFor="name"
-            className="block mb-2 font-medium text-yellow-500"
-          >
+          <label htmlFor="name" className="block mb-2 font-medium text-primary">
             Nom
           </label>
           <input
@@ -39,7 +36,7 @@ export default function ContactForm() {
         <div className="mb-4">
           <label
             htmlFor="email"
-            className="block mb-2 font-medium text-yellow-500"
+            className="block mb-2 font-medium text-primary"
           >
             Email
           </label>
@@ -54,7 +51,7 @@ export default function ContactForm() {
         <div className="mb-4">
           <label
             htmlFor="message"
-            className="block mb-2 font-medium text-yellow-500"
+            className="block mb-2 font-medium text-primary"
           >
             Message
           </label>
@@ -68,7 +65,7 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className="px-4 py-2 bg-yellow-500 rounded-md hover:bg-yellow-600 text-black font-bold font-rasa"
+          className="px-4 py-2 bg-primary rounded-md hover:bg-yellow-600 text-black font-bold font-rasa"
         >
           Envoyer
         </button>
