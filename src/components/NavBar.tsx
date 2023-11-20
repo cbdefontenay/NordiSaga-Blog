@@ -25,8 +25,8 @@ const itemMotionDesktop = {
 const navLinks = [
   { name: "Accueil", href: "/", id: 1 },
   { name: "Blog", href: "/blog", id: 2 },
-  { name: "A Propos", href: "/about", id: 3 },
-  { name: "Contact", href: "/contact", id: 4 },
+  { name: "Contact", href: "/contact", id: 3 },
+  { name: "Newsletter", href: "/register", id: 4 },
 ];
 
 const NavLinks = ({
@@ -40,6 +40,7 @@ const NavLinks = ({
     {navLinks.map(({ name, href, id }) => (
       <motion.a
         key={id}
+        className="hover:underline hover:text-primary"
         variants={isMobile ? itemMotion : itemMotionDesktop}
         href={href}
       >
@@ -72,7 +73,7 @@ export default function Nav() {
       </motion.div>
 
       {/* Title */}
-      <h1 className="hidden md:flex md:text-xl md:font-bold md:font-skranjiBold md:text-gray-100">
+      <h1 className="hidden md:flex md:text-xl md:font-bold md:font-skranjiBold md:text-gray-100 hover:text-primary">
         <a href="/">NordiSaga.</a>
       </h1>
 

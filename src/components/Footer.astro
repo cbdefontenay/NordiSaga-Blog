@@ -1,9 +1,37 @@
----
+<div class="flex flex-col h-full bottom-0">
+  <div class="w-full bg-gray-800 text-white">
+    <div class="text-center">
+      <p class="mb-5 hover:underline text-zinc-400 pt-5 hover:text-slate-200">
+        <a href="/about">A Propos de NordiSaga</a>
+      </p>
+      <p class="font-robotoMedium">
+        &copy; 2023 NordiSaga. Tout droit réservé.
+      </p>
+    </div>
 
----
-
-<div class="w-full bg-gray-800 text-white p-4">
-  <div class="text-center">
-    <p class="font-robotoRegular">&copy; 2023 NordiSaga. Tout droit réservé.</p>
+    <!-- transition -->
+    <div class="relative h-14 w-full pb-5">
+      <svg class="absolute h-full w-full overflow-visible">
+        <defs>
+          <linearGradient id="runes" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style={{ stopColor: "#b990db", stopOpacity: 1 }}
+            ></stop>
+            <stop offset="100%" style={{ stopColor: "#6923a3", stopOpacity: 1 }}
+            ></stop>
+          </linearGradient>
+        </defs>
+        <text
+          x="50%"
+          y="50%"
+          font-size="50"
+          fill="url(#runes)"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          class="text-sm md:text-lg"
+        >
+          ᚴᚢᚱᚦ ᚴᚢᚴ ᚴᚢᚾᚢᚱ ᚢᛅ ᚢᛏᛅ ᚠᚱᛅᚾ ᚦᛅ ᚢᛒ ᚴᚱᚢᚦ ᛅᚢᚴ ᚱᛅᚾ ᚴᚢᚾ
+        </text>
+      </svg>
+    </div>
   </div>
 </div>
