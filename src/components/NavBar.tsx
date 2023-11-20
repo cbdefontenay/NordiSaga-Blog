@@ -67,7 +67,7 @@ export default function Nav() {
             alt="NordiSaga Logo"
             width="50"
             height="50"
-            className="rounded-full"
+            className="rounded-full hover:animate-pulse"
           />
         </a>
       </motion.div>

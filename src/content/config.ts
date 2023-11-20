@@ -11,6 +11,7 @@ const postCollection = defineCollection({
     }),
 });
 
+
 export const collections = {
     posts: postCollection,
 };
