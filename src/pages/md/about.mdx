@@ -3,17 +3,27 @@ title: "NordiSaga raconte l'histoire du Nord"
 author: 'Cyprien de Fontenay'
 featured: 'false'
 ---
+import Carousel from "../../components/Carousel"
+
+export const images = [
+  "/carousel/odin.jpg",
+  "/carousel/fjord.jpg",
+  "/carousel/salomon.jpg",
+  "/carousel/scot_castle.jpg"
+];
+
 
 export const header = "L'histoire du Nord de l'Europe est peu connue en France."
 export const header2 = "Comment NordiSaga se différencie d'autres sites dédiés à l'histoire du Nord de l'Europe ?"
 export const header3 = "Qui suis-je ?"
+
 
 ## <h1 className=" text-sky-500 items-center text-center">{header}</h1>
 
 La France et les pays du Nord ont une histoire qui s'est rencontrée plus d'une fois. Les raids vikings en France et en Bretagne du
 VIIIe au XIe siècle en sont la preuve. Et puis la France ne doit-elle pas son nom aux Francs, ces guerriers venus des contrées germaniques à l'est du Rhin ? Malgré cela, le Nord de l'Europe, et notamment la Scandinavie restent un mystère pour beaucoup de Français. Après tout, on ne peut pas leur en vouloir, ce n'est pas notre histoire !
 
-<img src="odin.jpg" alt="drawing" className="flex w-1/3 my-7 hover:animate-pulse items-center justify-center rounded-3xl shadow-lg shadow-slate-300"/> 
+<Carousel client:load images={images} />
 
 Ces dernières années en revanche, on a pu voir dans le monde de la télévision notament, une montée significative de l'intérêt pour le Nord et ses mystères. Particulièrement pour les Vikings. Mais connaît-on vraiment leur histoire ? Tout comme la ***Ligue hanséatique***, la connait-on réellement ? Et pourtant cette organisation commerciale du nord de l'Allemagne actuelle a marqué l'histoire du Nord de l'Europe pendant plus de cinq cent ans.
 
