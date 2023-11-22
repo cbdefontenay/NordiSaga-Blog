@@ -1,0 +1,25 @@
+---
+import { getEntryBySlug } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug("posts", slug as string);
+
+if (!post) {
+  return Astro.redirect("/404");
+}
+
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title}>
+  <div class="text-gray-200 text-base md:text-2xl mb-16 ml-8">
+    ← <a href="/blog" class="hover:underline">Retour aux articles</a>
+  </div>
+
+  <div
+    class="prose prose-lg lg:prose-2xl overflow-visible relative w-screen text-gray-50 overflow-x-hidden px-5 md:px-0 flex flex-col justify-center mb-20 lg:ml-72 text-justify"
+  >
+    <Content />
+  </div>
+</Layout>

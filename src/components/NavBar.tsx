@@ -115,12 +115,12 @@ export default function Nav() {
       >
         <motion.span
           animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}
-          className="line-1 block h-0.5 w-8 bg-gray-100"
+          className="line-1 block h-0.5 w-8 bg-emerald-500"
         ></motion.span>
 
         <motion.span
           animate={{ width: toggled ? 0 : 24 }}
-          className="line-2 block h-0.5 w-6 bg-gray-400"
+          className="line-2 block h-0.5 w-6 bg-teal-400"
         ></motion.span>
         <motion.span
           animate={{
@@ -128,7 +128,7 @@ export default function Nav() {
             y: toggled ? -8 : 0,
             width: toggled ? 32 : 24,
           }}
-          className="line-3 block h-0.5 w-4 bg-gray-100"
+          className="line-3 block h-0.5 w-4 bg-emerald-500"
         ></motion.span>
       </motion.div>
     </nav>

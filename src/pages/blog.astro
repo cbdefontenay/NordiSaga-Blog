@@ -1,13 +1,25 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import PostList from "../components/PostList.astro";
+import CategoryList from "../components/CategoryList.astro";
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
 
 const posts = await getCollection("posts");
+const allPosts = await getCollection("posts");
+const allCategories = allPosts.flatMap((post) => post.data.category);
+const categories = Array.from(new Set(allCategories));
 ---
 
 <Layout title="Blog | Histoire">
-  <div class="mt-44 grid md:grid-cols-3 grid-cols-1">
+  <div class="flex w-full items-center justify-center font-skranjiRegular">
+    <CategoryList categories={categories} title="Catégories :" />
+  </div>
+
+  <div class="md:ml-10 mt-44 grid md:grid-cols-3 grid-cols-1">
     {posts.map((post) => <PostList posts={[post]} />)}
   </div>
 </Layout>

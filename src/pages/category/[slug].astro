@@ -1,0 +1,53 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import CategoryList from "../../components/CategoryList.astro";
+// import Pagination from '../../components/Pagination.astro';
+import PostList from "../../components/PostList.astro";
+import Layout from "../../layouts/Layout.astro";
+
+type Props = {
+  posts: CollectionEntry<"posts">[];
+};
+
+const page = Number(Astro.url.searchParams.get("page")) || 1;
+const postsPerPage = Number(4);
+const start = postsPerPage * (page - 1);
+const end = start + postsPerPage;
+const category = Astro.params.slug as string;
+const allPosts = await getCollection("posts");
+const postsByCategory = allPosts.filter((post) =>
+  post.data.category.includes(category)
+);
+
+const posts = postsByCategory.slice(start, end);
+---
+
+<Layout title="Catégories | NordiSaga">
+  <a
+    href="/blog"
+    class="text-zinc-300 text-lg md:text-2xl mb-16 hover:underline block ml-10 font-robotoMedium"
+    >← Retour aux articles</a
+  >
+  <div
+    class="mb-20 w-full flex items-center justify-start pl-12 md:pl-20 font-robotoRegular"
+  >
+    <CategoryList categories={[category]} title="Catégorie sélectionnée:" />
+  </div>
+
+  {
+    posts.length === 0 ? (
+      <p>Aucun article trouvé ici, essayez une autre catégorie...</p>
+    ) : (
+      // <div class="mb-12">
+      // Pagination here
+      // </div>
+      <div class="grid md:grid-cols-3 grid-cols-1 font-robotoMedium">
+        <PostList posts={posts} />
+      </div>
+
+      // <div class="mb-36">
+
+      // </div>
+    )
+  }
+</Layout>

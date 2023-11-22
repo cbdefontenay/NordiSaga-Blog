@@ -1,0 +1,19 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Category from "./Category.astro";
+
+type Props = {
+  categories: CollectionEntry<"posts">["data"]["category"];
+  title?: string;
+};
+
+const { categories, title } = Astro.props;
+---
+
+<div class="grid grid-cols-[auto,1fr] gap-x-10 gap-y-3 mb-5 max-lg:grid-cols-1">
+  {title && <h2 class="font-bold text-2xl text-darkBg">{title}</h2>}
+
+  <div class="flex gap-4 flex-wrap items-center">
+    {categories.map((category) => <Category category={category} />)}
+  </div>
+</div>
