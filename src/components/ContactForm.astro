@@ -1,8 +1,12 @@
+---
+const SECRET_EMAIL = import.meta.env.MY_EMAIL;
+---
+
 <div class="px-10 font-robotoMedium">
-  <h1 class="text-center text-xl">Contactez-moi</h1>
+  <h1 class="text-center text-xl text-cyan-400">Contactez-moi</h1>
   <form
     class="max-w-md mx-auto font-roboto"
-    action={`https://formsubmit.co/cbdefontenay@gmail.com`}
+    action={`https://formsubmit.co/${SECRET_EMAIL}`}
     method="POSt"
   >
     {/* Honeypot */}
@@ -20,41 +24,46 @@
     />
 
     <div class="mb-4">
-      <label for="name" class="block mb-2 font-medium text-primary"> Nom</label>
+      <label for="name" class="block mb-2 font-medium text-cyan-400">
+        Nom</label
+      >
       <input
         type="text"
         id="name"
         name="name"
+        placeholder="Nom..."
         class="w-full px-4 py-2 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
         required
       />
     </div>
     <div class="mb-4">
-      <label for="email" class="block mb-2 font-medium text-primary">
+      <label for="email" class="block mb-2 font-medium text-cyan-400">
         Email
       </label>
       <input
         type="email"
         id="email"
         name="email"
+        placeholder="Courriel..."
         class="w-full px-4 py-2 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
         required
       />
     </div>
     <div class="mb-4">
-      <label for="message" class="block mb-2 font-medium text-primary">
+      <label for="message" class="block mb-2 font-medium text-cyan-400">
         Message
       </label>
       <textarea
         id="message"
         name="message"
+        placeholder="Votre message commence ici..."
         class="w-full px-4 py-2 rounded-md border-gray-300 focus:ring-blue-500 focus:border-blue-500"
         rows={4}
         required></textarea>
     </div>
     <button
       type="submit"
-      class="px-4 py-2 bg-primary rounded-md hover:bg-yellow-600 text-black font-bold font-rasa"
+      class="px-4 py-2 bg-cyan-400 rounded-md hover:bg-yellow-600 text-black font-bold font-rasa"
     >
       Envoyer
     </button>
